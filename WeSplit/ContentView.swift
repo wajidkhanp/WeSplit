@@ -23,6 +23,12 @@ struct ContentView: View {
     return (orderAmount + (orderAmount * (tipSelection/100)))/peopelCount
   }
   
+  var totalCheckAmount: Double {
+    let orderAmount = Double(checkAmount) ?? 0
+    let tipSelection = Double(tipPercentages[tipPercentage])
+    return orderAmount + (orderAmount * (tipSelection/100))
+  }
+  
   var body: some View {
     NavigationView {
       Form {
@@ -44,8 +50,15 @@ struct ContentView: View {
           }.pickerStyle(SegmentedPickerStyle())
         }
         
+        Section(header: Text("Check Amout with tip")) {
+          Text("$\(totalCheckAmount, specifier: "%.2f")")
+        }
+        
         Section(header: Text("Total per person is")){
           Text("$\(totalPerPerson, specifier: "%.2f")")
+        }
+        NavigationLink(destination: FlagGames()) {
+          Text("Explore Bank test project").font(.body)
         }
       }.navigationBarTitle("WeSplit")
     }

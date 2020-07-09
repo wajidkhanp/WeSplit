@@ -13,6 +13,8 @@
 		7E37CE4024B293370015F33D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E37CE3F24B293370015F33D /* Assets.xcassets */; };
 		7E37CE4324B293370015F33D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E37CE4224B293370015F33D /* Preview Assets.xcassets */; };
 		7E37CE4624B293370015F33D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E37CE4424B293370015F33D /* LaunchScreen.storyboard */; };
+		7E5AC2D324B3548000A95012 /* FlagGames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5AC2D224B3548000A95012 /* FlagGames.swift */; };
+		7E81795A24B6C8BA002BCB4B /* Practice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E81795924B6C8BA002BCB4B /* Practice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		7E37CE4224B293370015F33D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7E37CE4524B293370015F33D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E37CE4724B293370015F33D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E5AC2D224B3548000A95012 /* FlagGames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagGames.swift; sourceTree = "<group>"; };
+		7E81795924B6C8BA002BCB4B /* Practice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +63,12 @@
 				7E37CE3924B293360015F33D /* AppDelegate.swift */,
 				7E37CE3B24B293360015F33D /* SceneDelegate.swift */,
 				7E37CE3D24B293360015F33D /* ContentView.swift */,
+				7E5AC2D224B3548000A95012 /* FlagGames.swift */,
 				7E37CE3F24B293370015F33D /* Assets.xcassets */,
 				7E37CE4424B293370015F33D /* LaunchScreen.storyboard */,
 				7E37CE4724B293370015F33D /* Info.plist */,
 				7E37CE4124B293370015F33D /* Preview Content */,
+				7E81795924B6C8BA002BCB4B /* Practice.swift */,
 			);
 			path = WeSplit;
 			sourceTree = "<group>";
@@ -147,7 +153,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E37CE3A24B293360015F33D /* AppDelegate.swift in Sources */,
+				7E5AC2D324B3548000A95012 /* FlagGames.swift in Sources */,
 				7E37CE3C24B293360015F33D /* SceneDelegate.swift in Sources */,
+				7E81795A24B6C8BA002BCB4B /* Practice.swift in Sources */,
 				7E37CE3E24B293360015F33D /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +297,7 @@
 				DEVELOPMENT_TEAM = RQ5L2VHHR9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = WeSplit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +305,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wajid.WeSplit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -309,6 +318,7 @@
 				DEVELOPMENT_TEAM = RQ5L2VHHR9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = WeSplit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,7 +326,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wajid.WeSplit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
